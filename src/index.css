@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: black; */
+  color: white;
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+}
+
+.logoSec,
+.navItems {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.logoSec {
+  width: 25%;
+  justify-content: center;
+}
+
+.logo img {
+  height: 63px;
+  width: 63px;
+  border-radius: 100%;
+}
+
+.navItems {
+  gap: 19px;
+  width: 75%;
+  justify-content: flex-end;
+}
+.navItems li a {
+  margin-right: 30px;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+}
+
+/* Home */
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  animation: animateBg 9s ease 1s infinite;
+}
+
+.content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  gap: 28px;
+}
+
+.container .mainHeading {
+  font-size: 3.3rem;
+  position: relative;
+  /* text-align: center; */
+}
+.container .details {
+  font-size: 1.7rem;
+  /* text-align: center; */
+  position: relative;
+}
+
+.btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 127px;
+  height: 47px;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+.btn:hover {
+  background: #000;
+  color: white;
+}
+
+.linkStyle {
+  height: 30px;
+  transition: all 0.5s ease;
+  width: 30px;
+}
+
+.linkStyle:hover {
+  color: black;
+}
+@keyframes animateBg {
+  0% {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  50% {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  100% {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("bg3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
