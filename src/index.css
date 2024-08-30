@@ -43,8 +43,8 @@ li a {
 }
 
 .logo img {
-  height: 63px;
-  width: 63px;
+  height: 56px;
+  width: 56px;
   border-radius: 100%;
 }
 
@@ -75,6 +75,7 @@ li a {
   flex-direction: column;
   color: white;
   animation: animateBg 9s ease 1s infinite;
+  transition: background .9s ease-in;
 }
 
 .content {
@@ -86,6 +87,7 @@ li a {
   height: 100%;
   width: 80%;
   gap: 28px;
+  margin-top: 80px;
 }
 
 .container .mainHeading {
