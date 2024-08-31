@@ -6,6 +6,7 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  transition: all .2s ease;
 }
 
 html{
@@ -132,6 +133,16 @@ a {
   height: 30px;
   transition: all 0.5s ease;
   width: 30px;
+  animation: animateLogo 2s alternate .2s infinite;
+}
+
+@keyframes animateLogo {
+  0%{
+    transform: rotateY(1deg);
+  }
+  100%{
+    transform: rotateY(180deg);
+  }
 }
 
 .linkStyle:hover {
